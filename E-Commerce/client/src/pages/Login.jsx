@@ -26,7 +26,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-     const response =  await axios.post("http://localhost:8000/user/sign-in", data);
+     const response =  await  axios.post("https://master-63wu.onrender.com/user/sign-up", data);
       toast.success("User Login successfully");
       setData({ email: "", password: "" });
       dispatch(addUser(response.data.data));
