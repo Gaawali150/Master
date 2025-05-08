@@ -17,7 +17,7 @@ const Product = () => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/user/get-product"
+          "http://master-63wu.onrender.com/user/get-product"
         ); 
         dispatch(setProducts(response.data.data))
       } catch (error) {
