@@ -22,7 +22,7 @@ const navigate = useNavigate()
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("http://localhost:8000/user/sign-up", data);
+      await axios.post("http://master-63wu.onrender.com/user/sign-up", data);
       toast.success("User registered successfully");
       setData({ name: "", email: "", password: "" });
       navigate("/login")
